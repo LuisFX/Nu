@@ -52,11 +52,11 @@ type ElmarioDispatcher () =
             else just world
         | Jump ->
             let physicsId = Simulants.Elmario.GetPhysicsId world
-            if World.isBodyOnGround physicsId world then
-                let world = World.playSound Constants.Audio.SoundVolumeDefault (asset "Gameplay" "Jump") world
-                let world = World.applyBodyForce (v3 0.0f 140000.0f 0.0f) physicsId world
-                just world
-            else just world
+            // if World.isBodyOnGround physicsId world then
+            let world = World.playSound Constants.Audio.SoundVolumeDefault (asset "Gameplay" "Jump") world
+            let world = World.applyBodyForce (v3 0.0f 140000.0f 0.0f) physicsId world
+            just world
+            // else just world
         | Nop -> just world
 
     // here we describe the content of the game including elmario, the ground he walks on, and a rock.

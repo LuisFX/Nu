@@ -86,6 +86,12 @@ type ElmarioDispatcher () =
                                     Entity.Size == v3 64.0f 64.0f 0.0f
                                     Entity.StaticImage == asset "Gameplay" "Rock"
                                 ]
+                            Content.block2d "Rock2"
+                                [
+                                    Entity.Position == v3 -150.0f -160.0f 0.0f
+                                    Entity.Size == v3 64.0f 64.0f 0.0f
+                                    Entity.StaticImage == asset "Gameplay" "Rock"
+                                ]
                         ]
                 ]
         ]

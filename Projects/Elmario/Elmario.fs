@@ -61,16 +61,31 @@ type ElmarioDispatcher () =
 
     // here we describe the content of the game including elmario, the ground he walks on, and a rock.
     override this.Content (_, _) =
-        [Content.screen Simulants.Screen.Name Vanilla []
-            [Content.group Simulants.Group.Name []
-                [Content.sideViewCharacter Simulants.Elmario.Name
-                    [Entity.Position == v3 0.0f 54.0f 0.0f
-                     Entity.Size == v3 108.0f 108.0f 0.0f]
-                 Content.block2d "Ground"
-                    [Entity.Position == v3 0.0f -224.0f 0.0f
-                     Entity.Size == v3 768.0f 64.0f 0.0f
-                     Entity.StaticImage == asset "Gameplay" "TreeTop"]
-                 Content.block2d "Rock"
-                    [Entity.Position == v3 352.0f -160.0f 0.0f
-                     Entity.Size == v3 64.0f 64.0f 0.0f
-                     Entity.StaticImage == asset "Gameplay" "Rock"]]]]
+        [
+            Content.screen Simulants.Screen.Name Vanilla []
+                [
+                    Content.group
+                        Simulants.Group.Name 
+                        []
+                        [
+                            Content.sideViewCharacter
+                                Simulants.Elmario.Name
+                                [
+                                    Entity.Position == v3 0.0f 54.0f 0.0f
+                                    Entity.Size == v3 108.0f 108.0f 0.0f
+                                ]
+                            Content.block2d "Ground"
+                                [
+                                    Entity.Position == v3 0.0f -224.0f 0.0f
+                                    Entity.Size == v3 768.0f 64.0f 0.0f
+                                    Entity.StaticImage == asset "Gameplay" "TreeTop"
+                                ]
+                            Content.block2d "Rock"
+                                [
+                                    Entity.Position == v3 352.0f -160.0f 0.0f
+                                    Entity.Size == v3 64.0f 64.0f 0.0f
+                                    Entity.StaticImage == asset "Gameplay" "Rock"
+                                ]
+                        ]
+                ]
+        ]

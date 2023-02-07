@@ -27,7 +27,7 @@
     <RemoveDir Directories="$(OutDir)/Assets" />
   </Target>
   <ItemGroup>
-    <Compile Include="Elmario.fs" />
+    <Compile Include="Assets.fs" />
     <Compile Include="Elmario.fs" />
     <Compile Include="Elmario.fs" />
     <Compile Include="Elmario.fs" />

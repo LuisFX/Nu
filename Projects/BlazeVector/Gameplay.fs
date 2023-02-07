@@ -209,7 +209,7 @@ module Player =
              nonPersistent Entity.LastTimeOnGround Int64.MinValue
              nonPersistent Entity.LastTimeJump Int64.MinValue]
 
-        override this.Register (player, world) =
+        override this.Register (player: Entity, world: World) =
             let world = World.monitor handleSpawnBullet player.UpdateEvent player world
             let world = World.monitor handleMovement player.UpdateEvent player world
             let world = World.monitor handleJump Events.MouseLeftDown player world

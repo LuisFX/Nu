@@ -2,7 +2,7 @@
 // Copyright (C) Bryan Edds, 2013-2020.
 
 #I __SOURCE_DIRECTORY__
-#r "nuget: Magick.NET-Q8-x64, 7.5.0.1"
+#r "nuget: Magick.NET-Q8-AnyCPU, 12.2.2"
 #r "nuget: Csv, 1.0.58"
 #r "nuget: FParsec, 1.0.3" // MUST be referenced BEFORE FParsec.dll!
 #r "nuget: Prime, 9.0.0"
